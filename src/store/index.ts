@@ -6,19 +6,17 @@ const BasketSlice = createSlice({
     initialState: InitialState,
     reducers: {
         add: (state, action) => {
-            return {
-                ...state,
-                cart: [action.payload.product, ...state]
-            };
-        },
-        // remove: (state, action) => {
-        //     return {
-        //         ...state,
-        //         cart: state.cart.filter((item: { id: String }) => item.id !== action.payload)
-        //     };
-        // }
-
-
+            return state.map(item => {
+              if (item.id !== action.payload.id) {
+                return item
+              }
+      
+              return {
+                ...item,
+                added: true
+              }
+            })
+          }
     }
 })
 

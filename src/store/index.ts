@@ -8,15 +8,15 @@ const BasketSlice = createSlice({
         add: (state, action) => {
             return {
                 ...state,
-                cart: [action.payload.product, ...state.cart]
+                cart: [action.payload.product, ...state]
             };
         },
-        remove: (state, action) => {
-            return {
-                ...state,
-                cart: state.cart.filter((item: { id: String }) => item.id !== action.payload)
-            };
-        }
+        // remove: (state, action) => {
+        //     return {
+        //         ...state,
+        //         cart: state.cart.filter((item: { id: String }) => item.id !== action.payload)
+        //     };
+        // }
 
 
     }
@@ -24,6 +24,6 @@ const BasketSlice = createSlice({
 
 const store = configureStore({ reducer: BasketSlice.reducer })
 
-export const { add, remove } = BasketSlice.actions
+export const { add } = BasketSlice.actions
 
 export { BasketSlice, store }

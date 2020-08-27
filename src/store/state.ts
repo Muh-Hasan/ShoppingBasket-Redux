@@ -10,11 +10,11 @@
 //         added?: Boolean,
 //     }]
 // }
-type Product = {
+export type Product = {
     id: String,
         name: String,
         price: Number,
-        src: String,
+        src: string,
         quantity: Number,
         added?: Boolean,
 }

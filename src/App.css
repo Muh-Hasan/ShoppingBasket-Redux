@@ -34,3 +34,15 @@
     margin-left: 20px;
     letter-spacing: 1px;
 }
+
+
+@media(max-width:430px){
+    .logo{
+        letter-spacing: 0;
+        margin-left: 5px;
+    }
+    .sp-one{
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }   
+}

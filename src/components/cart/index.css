@@ -34,6 +34,8 @@ table {
     background-color: black;
     color: white;
 }
+
+
 .div-cen-empty{
   text-align: center;
   /* margin-top: 220px; */
@@ -54,4 +56,18 @@ table {
   text-transform: capitalize;
   color: black;
   text-decoration: black !important;
+}
+
+@media(max-width:500px){
+  .img-table{
+    height: 50px;
+    width: 50px;
+  }
+  table {
+    width: 30%;
+  }
+  td,th{
+    padding: 4px;
+  }
+
 }

@@ -36,7 +36,7 @@ export default function Cart() {
                             {products.filter(product => product.added).map((product: ProductItem, i) => (
                                 <tr key={i.toString()}>
                                     <td>
-                                        <img src={product.src} alt={product.name} height='100px' width='100px' />
+                                        <img className='img-table' src={product.src} alt={product.name} height='100px' width='100px' />
                                     </td>
                                     <td>
                                         {product.name}

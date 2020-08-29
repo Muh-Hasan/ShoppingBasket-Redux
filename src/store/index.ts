@@ -8,12 +8,8 @@ const BasketSlice = createSlice({
         add: (state, action) => {
             return state.map(item => {
                 if (item.id !== action.payload.id) {
-                    console.log(item.quantity);
-
                     return item
                 }
-                console.log(item.quantity);
-
                 return {
                     ...item,
                     added: true,
@@ -26,24 +22,21 @@ const BasketSlice = createSlice({
                 if (item.id !== action.payload.id) {
                     return item
                 }
-                else {
-                    if (item.quantity > 0) {
-
-                        return {
-                            ...item,
-                            quantity: item.quantity - 1,
-                        }
-                    }
-                    else if (item.quantity <= 0) {
-                        return {
-                            ...item,
-                            added: false
-                        }
+                else if (item.quantity <= 1) {
+                    return {
+                        ...item,
+                        quantity: 0,
+                        added: false,
                     }
                 }
-                return item
+                return {
+                    ...item,
+                    quantity: item.quantity - 1
+                }
+
             })
         },
+
         clear: (state, action) => {
             return state.map(item => {
                 if (item.id !== action.payload.id) {
@@ -52,7 +45,20 @@ const BasketSlice = createSlice({
 
                 return {
                     ...item,
-                    added: false
+                    quantity: 0,
+                    added: false,
+                }
+            })
+        },
+        inc: (state, action) => {
+            return state.map(item => {
+                if (item.id !== action.payload.id) {
+                    return item
+                }
+
+                return {
+                    ...item,
+                    quantity: item.quantity + 1
                 }
             })
         }
@@ -61,6 +67,6 @@ const BasketSlice = createSlice({
 
 const store = configureStore({ reducer: BasketSlice.reducer })
 
-export const { add, remove, clear } = BasketSlice.actions
+export const { add, remove, clear, inc } = BasketSlice.actions
 
 export { BasketSlice, store }

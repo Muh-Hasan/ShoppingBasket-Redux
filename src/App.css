@@ -2,4 +2,30 @@
 
 *{
     font-family: 'Libre Franklin', sans-serif;
+    text-decoration: none;
+    margin: 0;
+}
+.bar{
+    
+    height: 50px;
+    width: 100%;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.bar span{
+    color: black;
+    font-size: 18px;
+    margin-right: 20px;
+}
+.sp-one{
+    font-weight: 500;
+    text-transform: lowercase;
+}
+.logo{
+    font-weight: 700;
+    text-transform: uppercase;
+    flex-grow: 1;
+    margin-left: 10px;
 }

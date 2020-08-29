@@ -1,0 +1,50 @@
+.total-align{
+    text-align: center;
+    font-size: 22px;
+    letter-spacing: 2px;
+    margin-top: 20px;
+}
+table {
+    text-align: center;
+    border-collapse: collapse;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+  
+  th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  tr:hover {background-color:#f5f5f5;}
+
+.cart-button{
+    padding: 5px 15px;
+    border: none;
+    background-color: lightgrey;
+    outline: none;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+.cart-button:hover{
+    background-color: black;
+    color: white;
+}
+.div-cen-empty{
+  text-align: center;
+  /* margin-top: 220px; */
+}
+.div-cen-empty h1{
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+.div-cen-empty span{
+  font-size: 17px;
+  font-weight: 500;
+  text-transform: capitalize;
+  color: black;
+}

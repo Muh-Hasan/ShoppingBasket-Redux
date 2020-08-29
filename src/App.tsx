@@ -15,12 +15,13 @@ function App() {
   let totalQ = products.filter(product => product.added).length
   return (
     <Router>
-        <div>
+        <div className='bar'>
+          <span className='logo'>Shoe Store</span>
           <Link to='/'>
-            <span>Products</span>
+            <span className='sp-one'>Products</span>
           </Link>
           <Link to='/cart'>
-            <span>Cart({totalQ})</span>
+            <span className='sp-one'>Cart({totalQ})</span>
           </Link>
         </div>
         <Routes>

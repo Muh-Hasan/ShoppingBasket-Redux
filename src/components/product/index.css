@@ -1,0 +1,50 @@
+.dis-pro{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.container{
+
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.body-dis-card{
+    max-width: 300px;
+    margin-bottom: 30px;
+}
+.body-dis-card h4{
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+.body-dis-card h5{
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.body-dis-card button{
+    border: none;
+    height: 30px;
+    width: 150px;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 500;
+    cursor: pointer;
+    letter-spacing: 1px;
+    margin-top: 5px;
+}
+.dis-div{
+    margin-left:20px;
+}
+.dis-img{
+    max-width: 300px;
+    max-height: 300px;
+    border-bottom: 10px solid red;
+
+}

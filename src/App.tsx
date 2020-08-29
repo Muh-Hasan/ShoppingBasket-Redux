@@ -1,4 +1,5 @@
 import React from 'react';
+import './hover-min.css'
 import './App.css';
 // components
 import ProductDis from './components/product/index'
@@ -15,8 +16,9 @@ function App() {
   let totalQ = products.filter(product => product.added).length
   return (
     <Router>
+      <div className='main'>
         <div className='bar'>
-          <span className='logo'>Shoe Store</span>
+          <span className='logo'>online shoe Store</span>
           <Link to='/'>
             <span className='sp-one'>Products</span>
           </Link>
@@ -28,6 +30,7 @@ function App() {
           <Route path='/' element={<ProductDis />} />
           <Route path='/cart' element={<Cart />} />
         </Routes>
+      </div>
     </Router>
   );
 }

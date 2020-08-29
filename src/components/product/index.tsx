@@ -17,7 +17,7 @@ export default function ProductDis() {
                 <div className='dis-div'>
                     <h4>{product.name}</h4>
                     <h5>${product.price}</h5>
-                    <button disabled={product.added} onClick={() => store.dispatch(add(product))}>add to cart</button>
+                    <button className='hvr-bounce-to-right' disabled={product.added} onClick={() => store.dispatch(add(product))}>add to cart</button>
                 </div>
             </div>
         )

@@ -1,9 +1,9 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
-import { store, remove, clear , inc } from '../../store/index'
+import { store, remove, clear, inc } from '../../store/index'
 import { ProductItem } from '../../store/state'
 import './index.css'
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 export default function Cart() {
 
 
@@ -12,7 +12,12 @@ export default function Cart() {
     return (
         <>
             <div className='div-cen-empty'>
-                {products.filter(product => product.added).length === 0 ? (<><h1>Your Cart is Empty</h1><Link to='/'><span>shop here</span></Link></>) : ''}
+                {products.filter(product => product.added).length === 0 ? (
+                <>
+                    <h1>Your Cart is Empty</h1>
+                    <Link to='/'><button className='hvr-bounce-to-left'>shop here</button>
+                    </Link>
+                </>) : ''}
             </div>
             {products.filter(product => product.added).length === 0 ? ' ' :
                 <div>

@@ -15,7 +15,7 @@ const InitialState: ProductItem[] = [{
     quantity: 0,
     added: false,
     src:
-        "https://assets.adidas.com/images/h_840,f_auto,q_auto:sensitive,fl_lossy/4a549ce0706d464a9692ab650129e6e9_9366/Supernova_Shoes_Green_FW0701_01_standard.jpg"
+    "https://assets.adidas.com/images/h_840,f_auto,q_auto:sensitive,fl_lossy/8e392059bc8d4eb382b4aba501496ce6_9366/Galaxy_5_Shoes_Red_FW5703_01_standard.jpg"
 },
 {
     id: "1",
@@ -24,7 +24,7 @@ const InitialState: ProductItem[] = [{
     quantity: 0,
     added: false,
     src:
-        "https://assets.adidas.com/images/h_840,f_auto,q_auto:sensitive,fl_lossy/8e392059bc8d4eb382b4aba501496ce6_9366/Galaxy_5_Shoes_Red_FW5703_01_standard.jpg"
+    "https://assets.adidas.com/images/h_840,f_auto,q_auto:sensitive,fl_lossy/4a549ce0706d464a9692ab650129e6e9_9366/Supernova_Shoes_Green_FW0701_01_standard.jpg"
 },
 {
     id: "2",
@@ -70,5 +70,14 @@ const InitialState: ProductItem[] = [{
     added: false,
     src:
         "https://assets.adidas.com/images/h_840,f_auto,q_auto:sensitive,fl_lossy/c6037c5ff2b64fbc8b51ab0b00bec14e_9366/Fluidflow_Shoes_Black_EG3665_EG3665_01_standard.jpg"
+},
+{
+    id: "7",
+    name: "ULTRABOOST DNA SHOES",
+    price: 170,
+    quantity: 0,
+    added: false,
+    src:
+        "https://assets.adidas.com/images/h_840,f_auto,q_auto:sensitive,fl_lossy/e7e09b8821be46a38d56ab0a00fbba19_9366/Ultraboost_DNA_Shoes_White_FW4904_01_standard.jpg"
 }]
 export { InitialState }
